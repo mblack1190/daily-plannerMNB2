@@ -22,13 +22,11 @@ $(document).ready(function(){
             } else(myHour > currentHour) {
                 $(this).addClass("future")
             }
-         });
+         })
      
     }
 
     colorChanger();
-
-
 
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
@@ -38,7 +36,5 @@ $(document).ready(function(){
     $("#hour-14 .description").val(localStorage.getItem("hour-14"));
     $("#hour-15 .description").val(localStorage.getItem("hour-15"));
     $("#hour-16 .description").val(localStorage.getItem("hour-16"));
-    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
-
-
+    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 })
