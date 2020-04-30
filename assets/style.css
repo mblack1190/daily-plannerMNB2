@@ -1,3 +1,11 @@
 .past {
-    background-color: rgb(143, 73, 73)
+    background-color: gray
+}
+
+.present {
+    background-color: green
+}
+
+.future {
+    background-color: blueviolet
 }
