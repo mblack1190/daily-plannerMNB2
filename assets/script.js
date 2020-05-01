@@ -18,15 +18,18 @@ $(document).ready(function(){
             if(myHour < currentHour) {
                 $(this).addClass("past")
             } else if(myHour === currentHour) {
-                $(this).addClass("present")
-            } else(myHour > currentHour) {
-                $(this).addClass("future")
+                $(this).addClass("present");
+                $(this).removeClass("past")
+            } else {
+                $(this).addClass("future");
+                $(this).removeClass("past");
+                $(this).removeClass("present");
             }
          })
      
     }
 
-    colorChanger();
+    setInterval(colorChanger, 15000);
 
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
